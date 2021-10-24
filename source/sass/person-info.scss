@@ -1,0 +1,64 @@
+.person-info__description {
+  display: inline-block;
+  vertical-align: super;
+  margin: 0;
+}
+
+.person-info__text {
+  display: inline-block;
+  margin-bottom: 23px;
+  margin-left: 10px;
+  position: relative;
+  padding-left: 35px;
+  
+  &--second {
+    display: block;
+    margin-left: 157px;
+    margin-bottom: 0;
+  }
+  
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background-color: #000000;
+    bottom: 14px;
+  }
+  
+  &::before {
+    left: -10px;
+    
+  }
+  
+  &::after {
+    left: 150px;
+  }
+}
+
+.person-info__name {
+  padding-left: 130px;
+}
+
+.person-info__table {
+  width: 60%;
+  
+  td {
+    border:none;
+  }
+  
+  td:last-child:not(.person-info__const) {
+    border-bottom: 1px solid #000000;
+  }  
+  
+  td:last-child {  
+    width: 60%;
+  }
+}
+
+.person-info__first-line td {
+  padding-bottom: 23px;
+  padding-top: 23px;
+}

@@ -1,0 +1,25 @@
+.conditions__description, .conditions__time {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.conditions__table { 
+  th {
+    text-align: left;
+    font-weight: 400;
+    padding-left: 5px;
+  }
+  
+  tr {
+    height: 23px;
+    text-align: center;
+  }
+  
+  td:first-child {
+    width: 5%;
+  }
+}
+
+.conditions__number {
+  font-weight: 700;
+}
