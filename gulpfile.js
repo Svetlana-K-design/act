@@ -54,6 +54,6 @@ exports.default = gulp.series(
 //GhPages
 
 gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
+  return gulp.src('./source/**/*')
     .pipe(ghPages());
 });

@@ -27,9 +27,29 @@
       <section class="page-main__person-info person-info">
         <h2 class="visually-hidden">Участники</h2>
         <p><b>Настоящий акт составлен в присутствии следующих лиц:</b></p>
-        <p class="person-info__description">Представитель перевозчика:</p>
-        <span class="person-info__text"><sub>Должность</sub> <sub class="person-info__name">Ф.И.О</sub></span>
-        <span class="person-info__text person-info__text--second"><sub>Должность</sub> <sub class="person-info__name">Ф.И.О</sub></span>
+        <table class="person-info__name">
+          <tr>
+            <td rowspan="4" class="person-info__table-title">Представитель перевозчика:</td>
+            <td class="person-info__sell"></td>
+            <td class="person-info__hidden"></td>
+            <td class="person-info__sell person-info__sell--user"></td>
+          </tr>
+          <tr>
+            <td class="person-info__text">Должность</td>
+            <td class="person-info__hidden"></td>
+            <td class="person-info__text person-info__text--user">Ф.И.О</td>
+          </tr>
+          <tr>
+            <td class="person-info__sell"></td>
+            <td class="person-info__hidden"></td>
+            <td class="person-info__sell"></td>
+          </tr>
+          <tr>
+            <td class="person-info__text">Должность</td>
+            <td class="person-info__hidden"></td>
+            <td class="person-info__text">Ф.И.О</td>
+          </tr>
+        </table>
         <table class="person-info__table">
           <tr class="person-info__first-line">
             <td>Перевозчик</td>
@@ -107,14 +127,26 @@
             <td></td>
             <td></td>
           </tr>
-          </table>
-        </section>
-      </main>
-      <footer class="page-body__page-footer page-footer">
-        <p class="page-footer__description">Представитель перевозчика:</p>
-        <span class="page-footer__text"><sub>(должность, ФИО, подпись)</sub></span>
-        <span class="page-footer__text page-footer__text--second"><sub>(должность, ФИО, подпись)</sub></span>
-      </footer>
-    </div>
-  </body>
-  </html>
+        </table>
+      </section>
+    </main>
+    <footer class="page-body__page-footer page-footer">
+      <table class="page-footer__name">
+        <tr>
+          <td rowspan="4" class="page-footer__table-title">Представитель перевозчика:</td>
+          <td class="page-footer__sell"></td>
+        </tr>
+        <tr>
+          <td class="page-footer__text">(должность, ФИО, подпись)</td>
+        </tr>
+        <tr>
+          <td class="page-footer__sell"></td>
+        </tr>
+        <tr>
+          <td class="page-footer__text">(должность, ФИО, подпись)</td>
+        </tr>
+      </table>
+    </footer>
+  </div>
+</body>
+</html>

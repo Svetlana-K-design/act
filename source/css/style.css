@@ -83,35 +83,38 @@ table {
   font-weight: 700; }
 
 .person-info__description {
-  display: inline-block;
   vertical-align: super;
   margin: 0; }
 
-.person-info__text {
-  display: inline-block;
-  margin-bottom: 23px;
-  margin-left: 10px;
-  position: relative;
-  padding-left: 35px; }
-  .person-info__text--second {
-    display: block;
-    margin-left: 157px;
-    margin-bottom: 0; }
-  .person-info__text::before, .person-info__text::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 150px;
-    height: 1px;
-    background-color: #000000;
-    bottom: 14px; }
-  .person-info__text::before {
-    left: -10px; }
-  .person-info__text::after {
-    left: 150px; }
-
 .person-info__name {
-  padding-left: 130px; }
+  width: 90%;
+  padding: 0; }
+  .person-info__name td {
+    height: 23px;
+    padding: 0; }
+  .person-info__name td:not(.person-info__text) {
+    border: none; }
+
+.person-info__table-title {
+  width: 26%;
+  vertical-align: top; }
+
+.person-info__sell {
+  width: 35%; }
+  .person-info__sell--user {
+    width: 45%; }
+
+.person-info__text {
+  width: 35%;
+  text-align: center;
+  vertical-align: top;
+  border: none;
+  border-top: 1px solid #000000; }
+  .person-info__text--user {
+    width: 45%; }
+
+.person-info__hidden {
+  width: 1%; }
 
 .person-info__table {
   width: 60%; }
@@ -132,28 +135,26 @@ table {
   margin: 0;
   font-weight: 700; }
 
-.page-footer__text {
-  display: inline-block;
-  margin-bottom: 23px;
-  margin-left: 10px;
-  position: relative;
-  padding-left: 35px; }
-  .page-footer__text--second {
-    display: block;
-    margin-left: 170px;
-    margin-bottom: 0; }
-  .page-footer__text::before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 1px;
-    background-color: #000000;
-    bottom: 14px; }
-  .page-footer__text::before {
-    left: -10px; }
+.page-footer__name {
+  width: 80%; }
+  .page-footer__name td {
+    height: 23px;
+    padding: 0; }
+  .page-footer__name td:not(.page-footer__text) {
+    border: none; }
 
-.person-info__name {
-  padding-left: 130px; }
+.page-footer__table-title {
+  width: 20%;
+  vertical-align: top; }
+
+.page-footer__sell {
+  width: 45%; }
+
+.page-footer__text {
+  width: 45%;
+  text-align: center;
+  vertical-align: top;
+  border: none;
+  border-top: 1px solid #000000; }
 
 /*# sourceMappingURL=style.css.map */
